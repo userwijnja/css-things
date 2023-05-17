@@ -1,0 +1,35 @@
+<div class="wrap"><div class="hmove">
+  <div class="hslide">
+    <h3>Slide 1</h3>
+    <p>BladieBla</p>
+  </div>
+  <div class="hslide">
+    <h3>Slide 2</h3>
+    <p>Ladadadadalalada</p>
+  </div>
+  <div class="hslide">
+    <h3>Slide 3</h3>
+    <p>Pompompomplaceholder</p>
+  </div>
+</div></div>
+
+<style>
+.hmove { display: flex; }
+.hslide { width: 100%; flex-shrink: 0; }
+
+
+.wrap { overflow: hidden; }
+
+
+.hmove { position: relative; top: 0; right: 0; }
+@keyframes slideh {
+  0% { right: 0; } 30% { right: 0; }
+  33% { right: 100%; } 63% { right: 100%; }
+  66% { right: 200%; } 97% { right: 200%; }
+  100% { right: 0; }
+}
+ 
+
+.hmove { animation: slideh linear 10s infinite; }
+.hmove:hover { animation-play-state: paused; }
+</style>
