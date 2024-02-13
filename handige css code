@@ -1,0 +1,8 @@
+//ruimte alleen onder laatste regel:
+
+p:last-child {margin-bottom: 0;}
+
+// foto precies in het midden:
+  img {
+    object-position: 50% 20% !important;
+}
